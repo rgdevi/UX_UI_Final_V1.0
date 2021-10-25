@@ -1,0 +1,707 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="general.css" media="screen">
+  <link rel="stylesheet" href="Home.css" media="screen">
+  <link rel="stylesheet" href="carousel.css" media="screen">
+  <link rel="stylesheet" href="results.css" media="screen">
+
+  <script src="https://kit.fontawesome.com/7b9417aafe.js" crossorigin="anonymous"></script>
+
+  <title>courses</title>
+</head>
+
+<body>
+
+
+
+
+  <!-- nav bar -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="images/book-logo-nobg.png" alt="Squad-Ed" height="60">
+        </a>
+        <a class="u-text-1" href="index.html"
+          style="text-decoration: none;font-family: 'Raleway', sans-serif; font-size: 1.5rem; font-weight: 800; color:#002333;">
+          Squad Ed
+        </a>
+
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+            <li class="nav-item dropdown ms-3 mb-3">
+              <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                COURSES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Art & Literature</a></li>
+                <li><a class="dropdown-item" href="#">Biology</a></li>
+                <li><a class="dropdown-item" href="#">Computer Science</a></li>
+                <li><a class="dropdown-item" href="#">Data Science</a></li>
+                <li><a class="dropdown-item" href="#">Painting</a></li>
+                <li><a class="dropdown-item" href="#">Product Management</a></li>
+                <li><a class="dropdown-item" href="#">UX/UI</a></li>
+                <li><a class="dropdown-item" href="#">Veterinary Science</a></li>
+                <li><a class="dropdown-item" href="#">Website Design</a></li>
+              </ul>
+            </li>
+
+
+
+            <li class="nav-item ms-3">
+              <a class="nav-link active" href="#">JOBS</a>
+            </li>
+
+            <li class="nav-item ms-3">
+              <a class="nav-link active" aria-current="page" href="#">CONTACT</a>
+            </li>
+
+
+
+          </ul>
+
+          <form class="d-flex">
+
+            <div class="input-group">
+              <div class="input-group-prepend">
+
+
+                <a class="nav-link active mt-4" id="sign-in" href="#">SIGN IN </a>
+              </div>
+              <button type="button" id="free-btn"
+                class="u-border-none u-btn u-btn-round u-button-style u-custom-color-5 u-custom-font u-heading-font u-hover-custom-color-6 u-radius-15 u-btn-1">JOIN
+                FOR
+                FREE</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+    </nav>
+  </header>
+
+
+  <!-- hero section -->
+
+  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+    <!-- <div class="carousel-indicators">
+      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+    </div> -->
+    <div class="carousel-inner">
+
+      <div class="carousel-item active hero-section">
+        <img src="images/cropped hero -reults page.jpg" id="hero-image"
+          class="u-align-center u-clearfix u-image u-shading u-section-1" data-image-width="750" alt="slider 2">
+
+
+
+        <!-- <div class="container">
+
+          
+          <div class="carousel-caption">
+            <h1>COURSES</h1>
+            <p> search bar</p>
+
+            
+          </div>
+        </div> -->
+
+        <div class="search-wrapper">
+          <div class="search">
+            <div class="search-title"><span>Courses</span></div>
+            <input type="text" class="search-phrase" placeholder="What are you looking for?">
+            <button type="submit" class="search-btn">
+              <i class="fa fa-search"></i>
+            </button>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+
+
+
+
+
+    <div class="container-fluid padding hero-section">
+      <div class="row padding">
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 hero">
+
+
+        </div>
+      </div>
+
+
+      <!-- content -->
+
+
+      <div class="row g-0">
+
+
+        <div class="col-md-3">
+
+
+          <!-- <h5> Filter by:</h5> -->
+
+          <!-- expermiment - side menu filter starts -->
+          <div class="filter"> <button class="btn btn-default" type="button" data-toggle="collapse"
+              data-target="#mobile-filter" aria-expanded="true" aria-controls="mobile-filter">Filters<span
+                class="fa fa-filter pl-1"></span></button>
+          </div>
+          <div id="sidebar">
+            <p class="pl-sm-0 pl-2 ms-3"> <a href="index.html">Home</a> | <b>Search Results</b></p>
+            <div class="border-bottom pb-2 ms-3">
+              <h4 id="Filter-text">Filter by:</h4>
+            </div>
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Level</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="artisan"> <label for="artisan">Beginner
+                  </label> </div>
+                <div class="form-group"> <input type="checkbox" id="breakfast"> <label
+                    for="breakfast">Intermediate</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Advanced</label>
+                </div>
+              </form>
+            </div>
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Duration</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="tea"> <label for="tea">1-4 Weeks</label> </div>
+                <div class="form-group"> <input type="checkbox" id="cookies"> <label for="cookies">1-3 Months</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="pastries"> <label for="pastries">4+ Months</label>
+                </div>
+              </form>
+            </div>
+
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Topics</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">Health & Awareness</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">Animal Behavior
+                  </label>
+
+                </div>
+                <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">Marine Biology
+                  </label>
+
+                </div>
+              </form>
+            </div>
+
+
+            <div class="py-2 ms-3">
+              <h6 class="font-weight-bold">Learning Type</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">Mentor guided</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">Self learning
+                  </label>
+
+                </div>
+                <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">Specializations
+                  </label>
+
+                </div>
+              </form>
+            </div>
+          </div>
+
+
+
+
+          <!-- Sidebar filter section -->
+          <section id="mobile-filter">
+            <p> Home | <b>Search Results</b></p>
+            <div class="border-bottom pb-2 ms-2">
+              <h4 id="burgundy">Filter by:</h4>
+            </div>
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Level</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="artisan"> <label for="artisan">Beginner</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="breakfast"> <label
+                    for="breakfast">Intermediate</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="healthy"> <label for="healthy">Advanced</label>
+                </div>
+              </form>
+            </div>
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Duration</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="tea"> <label for="tea">1-4 Weeks</label> </div>
+                <div class="form-group"> <input type="checkbox" id="cookies"> <label for="cookies">1-3 Months</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="pastries"> <label for="pastries">4+ Months</label>
+                </div>
+
+              </form>
+            </div>
+            <div class="py-2 border-bottom ms-3">
+              <h6 class="font-weight-bold">Topics</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">Health & Awareness</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="5off" id="off">Animal
+                    Behvaior</label> </div>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="5off" id="off">Marine
+                    Biology</label>
+                </div>
+              </form>
+            </div>
+
+            <div class="py-2 ms-3">
+              <h6 class="font-weight-bold">Topics</h6>
+              <div id="green"><span class="fa fa-minus"></span></div>
+              <form>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="25">Learning Type</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="5off"> <label for="5off" id="off">Mentor
+                    guided</label>
+                </div>
+                <div class="form-group"> <input type="checkbox" id="25off"> <label for="5off" id="off">Self
+                    learning</label>
+                  <div class="form-group"> <input type="checkbox" id="25off"> <label for="5off"
+                      id="off">Specializations</label>
+                  </div>
+              </form>
+            </div>
+
+
+          </section>
+
+
+        </div>
+
+        <!-- experiment - side menu filter ends -->
+
+
+        <!-- content cards -->
+
+        <div class="col-md-9 section-right">
+          <div class="card-group ">
+            <div class="card mb-3 mx-5 my-3" style="max-width: 70rem;">
+              <div class="row g-0 content-cards">
+                <div class="col-md-5">
+                  <img src="images/noaa-RDEaV381Cxg-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-7 card-text-content">
+                  <div class="card-body">
+                    <h5 class="card-title">Introduction to Biology</h5>
+                    <p class="card-text">Biology is a natural science concerned with the study
+                      of
+                      life and living organisms. Modern biology is a vast and eclectic field composed of many
+                      specialized
+                      disciplines that study the structure, function, growth, distribution, evolution, or other features
+                      of
+                      living organisms, the cell is the basic unit of life.</p>
+
+                    <div class="card-footer-section mb-3">
+
+                      <div class="ratings-container">
+                        <div class="ratings mx-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star-half"></i>
+                        </div>
+                        <span><small> 4.5 (30,304)</small></span>
+
+                      </div>
+                      <div class="spec-1 text-muted"><span class="dot"></span><span>Mentor guided</span><br></div>
+                      <a href="#" class="stretched-link">Learn More</a>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+          <div class="card-group ">
+            <div class="card mb-3 mx-5 my-3" style="max-width: 70rem;">
+              <div class="row g-0 content-cards">
+                <div class="col-md-5">
+                  <img src="images/moritz-kindler-G66K_ERZRhM-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-7 card-text-content">
+                  <div class="card-body">
+                    <h5 class="card-title">Neurobiology</h5>
+                    <p class="card-text">Neurobiology is the study of cells of the nervous system and the organization
+                      of
+                      these cells into functional circuits that process information and mediate behavior. It is a
+                      subdiscipline of both biology and neuroscience.</p>
+
+                    <div class="card-footer-section mb-3">
+
+                      <div class="ratings-container">
+                        <div class="ratings mx-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star-half"></i>
+                        </div>
+                        <span><small> 4.8 (12,429)</small></span>
+
+                      </div>
+                      <div class="spec-1 text-muted"><span class="dot"></span><span>Mentor guided</span><br></div>
+                      <a href="#" class="stretched-link">Learn More</a>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+
+
+
+          <div class="card-group ">
+            <div class="card mb-3 mx-5 my-3" style="max-width: 70rem;">
+              <div class="row g-0 content-cards">
+                <div class="col-md-5">
+                  <img src="images/mikhail-vasilyev-NodtnCsLdTE-unsplash.jpg" class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-7 card-text-content">
+                  <div class="card-body">
+                    <h5 class="card-title">Animal Behavior & Welfare</h5>
+                    <p class="card-text">Animal welfare has been described as a complex, multi-faceted public policy
+                      issue
+                      which includes important scientific, ethical, and other dimensions. Improving our understanding of
+                      animal welfare, involves the fascinating study of animal behavior as well as the challenge of
+                      accessing the emotions of animals.</p>
+
+                    <div class="card-footer-section mb-3">
+
+                      <div class="ratings-container">
+                        <div class="ratings mx-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+                        </div>
+                        <span><small> 5.0 (45,340)</small></span>
+
+                      </div>
+                      <div class="spec-1 text-muted"><span class="dot"></span><span>Mentor guided</span><br></div>
+                      <a href="details.html" class="stretched-link">Learn More</a>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+          </div>
+
+
+
+
+          <div class="card-group">
+            <div class="card mb-3 mx-5 my-3" style="max-width: 70rem;">
+              <div class="row g-0 content-cards">
+                <div class="col-md-5">
+                  <img src="images/pharma-hemp-complex-QTQscp2qQ-Y-unsplash.jpg" class="img-fluid rounded-start"
+                    alt="...">
+                </div>
+                <div class="col-md-7 card-text-content">
+                  <div class="card-body">
+                    <h5 class="card-title">Understanding Animal Care</h5>
+                    <p class="card-text">Animals must be provided water, food, proper handling, health care, and an
+                      environment appropriate to their care and use, with thoughtful consideration for their
+                      species-typical
+                      biology and behavior. Animals should be cared for in ways that minimize fear, pain, stress, and
+                      suffering.</p>
+
+                    <div class="card-footer-section mb-3">
+
+                      <div class="ratings-container">
+                        <div class="ratings mx-2"><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i><i class="fas fa-star-half"></i>
+                        </div>
+                        <span><small> 4.5 (9,230)</small></span>
+
+                      </div>
+                      <div class="spec-1 text-muted"><span class="dot"></span><span>Mentor guided</span><br></div>
+                      <a href="#" class="stretched-link">Learn More</a>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+
+
+        <!-- pagination -->
+        <div class="content-pagination mt-4 mb-3">
+
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <span class="page-link">Previous</span>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item" aria-current="page">
+              <span class="page-link">2</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+      <!-- footer -->
+      <footer class="u-clearfix u-custom-color-2 u-footer" id="sec-26e8">
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-clearfix u-expanded-width u-gutter-4 u-layout-wrap u-layout-wrap-1">
+            <div class="u-gutter-0 u-layout">
+              <div class="u-layout-row">
+                <div
+                  class="u-align-center u-container-style u-layout-cell u-left-cell u-size-14-lg u-size-14-xl u-size-21-sm u-size-21-xs u-size-30-md u-layout-cell-1">
+                  <div class="u-container-layout u-valign-middle u-container-layout-1">
+                    <p class="u-custom-font u-heading-font u-text u-text-default u-text-1">Squad Ed</p>
+                    <p
+                      class="u-align-center-sm u-align-center-xs u-align-left-lg u-align-left-md u-align-left-xl u-heading-font u-text u-text-2">
+                      It's high time to get yourself&nbsp; industry ready!</p>
+                    <div class="u-social-icons u-spacing-10 u-social-icons-1">
+                      <a class="u-social-url" title="facebook" target="_blank" href=""><span
+                          class="u-icon u-social-facebook u-social-icon u-icon-1"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-e0c1"></use>
+                          </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-e0c1">
+                            <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M73.5,31.6h-9.1c-1.4,0-3.6,0.8-3.6,3.9v8.5h12.6L72,58.3H60.8v40.8H43.9V58.3h-8V43.9h8v-9.2
+              c0-6.7,3.1-17,17-17h12.5v13.9H73.5z"></path>
+                          </svg></span>
+                      </a>
+                      <a class="u-social-url" title="twitter" target="_blank" href=""><span
+                          class="u-icon u-social-icon u-social-twitter u-icon-2"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-f734"></use>
+                          </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-f734">
+                            <circle fill="currentColor" class="st0" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M83.8,47.3c0,0.6,0,1.2,0,1.7c0,17.7-13.5,38.2-38.2,38.2C38,87.2,31,85,25,81.2c1,0.1,2.1,0.2,3.2,0.2
+              c6.3,0,12.1-2.1,16.7-5.7c-5.9-0.1-10.8-4-12.5-9.3c0.8,0.2,1.7,0.2,2.5,0.2c1.2,0,2.4-0.2,3.5-0.5c-6.1-1.2-10.8-6.7-10.8-13.1
+              c0-0.1,0-0.1,0-0.2c1.8,1,3.9,1.6,6.1,1.7c-3.6-2.4-6-6.5-6-11.2c0-2.5,0.7-4.8,1.8-6.7c6.6,8.1,16.5,13.5,27.6,14
+              c-0.2-1-0.3-2-0.3-3.1c0-7.4,6-13.4,13.4-13.4c3.9,0,7.3,1.6,9.8,4.2c3.1-0.6,5.9-1.7,8.5-3.3c-1,3.1-3.1,5.8-5.9,7.4
+              c2.7-0.3,5.3-1,7.7-2.1C88.7,43,86.4,45.4,83.8,47.3z"></path>
+                          </svg></span>
+                      </a>
+                      <a class="u-social-url" title="instagram" target="_blank" href=""><span
+                          class="u-icon u-social-icon u-social-instagram u-icon-3"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-b4d3"></use>
+                          </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-b4d3">
+                            <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF"
+                              d="M55.9,38.2c-9.9,0-17.9,8-17.9,17.9C38,66,46,74,55.9,74c9.9,0,17.9-8,17.9-17.9C73.8,46.2,65.8,38.2,55.9,38.2
+              z M55.9,66.4c-5.7,0-10.3-4.6-10.3-10.3c-0.1-5.7,4.6-10.3,10.3-10.3c5.7,0,10.3,4.6,10.3,10.3C66.2,61.8,61.6,66.4,55.9,66.4z">
+                            </path>
+                            <path fill="#FFFFFF"
+                              d="M74.3,33.5c-2.3,0-4.2,1.9-4.2,4.2s1.9,4.2,4.2,4.2s4.2-1.9,4.2-4.2S76.6,33.5,74.3,33.5z">
+                            </path>
+                            <path fill="#FFFFFF" d="M73.1,21.3H38.6c-9.7,0-17.5,7.9-17.5,17.5v34.5c0,9.7,7.9,17.6,17.5,17.6h34.5c9.7,0,17.5-7.9,17.5-17.5V38.8
+              C90.6,29.1,82.7,21.3,73.1,21.3z M83,73.3c0,5.5-4.5,9.9-9.9,9.9H38.6c-5.5,0-9.9-4.5-9.9-9.9V38.8c0-5.5,4.5-9.9,9.9-9.9h34.5
+              c5.5,0,9.9,4.5,9.9,9.9V73.3z"></path>
+                          </svg></span>
+                      </a>
+                      <a class="u-social-url" title="linkedin" target="_blank" href=""><span
+                          class="u-icon u-social-icon u-social-linkedin u-icon-4"><svg class="u-svg-link"
+                            preserveAspectRatio="xMidYMin slice" viewBox="0 0 112 112" style="">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-ebd4"></use>
+                          </svg><svg class="u-svg-content" viewBox="0 0 112 112" x="0" y="0" id="svg-ebd4">
+                            <circle fill="currentColor" cx="56.1" cy="56.1" r="55"></circle>
+                            <path fill="#FFFFFF" d="M41.3,83.7H27.9V43.4h13.4V83.7z M34.6,37.9L34.6,37.9c-4.6,0-7.5-3.1-7.5-7c0-4,3-7,7.6-7s7.4,3,7.5,7
+              C42.2,34.8,39.2,37.9,34.6,37.9z M89.6,83.7H76.2V62.2c0-5.4-1.9-9.1-6.8-9.1c-3.7,0-5.9,2.5-6.9,4.9c-0.4,0.9-0.4,2.1-0.4,3.3v22.5
+              H48.7c0,0,0.2-36.5,0-40.3h13.4v5.7c1.8-2.7,5-6.7,12.1-6.7c8.8,0,15.4,5.8,15.4,18.1V83.7z"></path>
+                          </svg></span>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="u-align-center u-container-style u-layout-cell u-size-16-lg u-size-16-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-2">
+                  <div
+                    class="u-container-layout u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-valign-middle-xs u-container-layout-2">
+                    <!--position-->
+                    <div data-position="" class="u-align-left u-position u-position-1">
+                      <!--block-->
+                      <div class="u-block">
+                        <div class="u-block-container u-clearfix">
+                          <!--block_header-->
+                          <h5 class="u-block-header u-text u-text-3">
+                            <!--block_header_content--> WHAT WE DO
+                            <!--/block_header_content-->
+                          </h5>
+                          <!--/block_header-->
+                          <!--block_content-->
+                          <div class="u-align-left-xs u-block-content u-text u-text-4">
+                            <!--block_content_content-->
+                            <br>Courses<br>Tutorials<br>Jobs<br>Webinars<br>About Us
+                            <!--/block_content_content-->
+                          </div>
+                          <!--/block_content-->
+                        </div>
+                      </div>
+                      <!--/block-->
+                    </div>
+                    <!--/position-->
+                  </div>
+                </div>
+                <div
+                  class="u-align-center-lg u-align-center-sm u-align-center-xl u-align-center-xs u-align-left-md u-container-style u-layout-cell u-right-cell u-size-15-lg u-size-15-xl u-size-19-sm u-size-19-xs u-size-30-md u-layout-cell-3">
+                  <div class="u-container-layout u-valign-bottom-sm u-valign-bottom-xs u-container-layout-3">
+                    <!--position-->
+                    <div data-position="" class="u-position u-position-2">
+                      <!--block-->
+                      <div class="u-block">
+                        <div class="u-block-container u-clearfix">
+                          <!--block_header-->
+                          <h5 class="u-align-left u-block-header u-text u-text-5">
+                            <!--block_header_content--> RESOURCES
+                            <!--/block_header_content-->
+                          </h5>
+                          <!--/block_header-->
+                          <!--block_content-->
+                          <div class="u-align-left u-block-content u-text u-text-6">
+                            <!--block_content_content-->
+                            <br>FAQ<br>Support<br>Contacts Us<br>Privacy Policy<br>Site Map
+                            <!--/block_content_content-->
+                          </div>
+                          <!--/block_content-->
+                        </div>
+                      </div>
+                      <!--/block-->
+                    </div>
+                    <!--/position-->
+                  </div>
+                </div>
+                <div
+                  class="u-align-center-sm u-align-center-xs u-container-style u-layout-cell u-size-15-lg u-size-15-xl u-size-30-md u-size-30-sm u-size-30-xs u-layout-cell-4">
+                  <div class="u-container-layout u-valign-middle-lg u-valign-middle-md u-container-layout-4">
+                    <!--position-->
+                    <div data-position="" class="u-position u-position-3">
+                      <!--block-->
+                      <div class="u-block">
+                        <div class="u-block-container u-clearfix">
+                          <!--block_header-->
+                          <h5 class="u-align-left u-block-header u-text u-text-7">
+                            <!--block_header_content--> OUR PARTNERS
+                            <!--/block_header_content-->
+                          </h5>
+                          <!--/block_header-->
+                          <!--block_content-->
+                          <div class="u-align-left u-block-content u-text u-text-8">
+                            <!--block_content_content-->
+                            <br>Alpha Tech<br>Omega Research Lab<br>Beta Designers<br>Biotech Ins<br>
+                            <br>
+                            <!--/block_content_content-->
+                          </div>
+                          <!--/block_content-->
+                        </div>
+                      </div>
+                      <!--/block-->
+                    </div>
+                    <!--/position-->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="u-align-center u-small-text u-text u-text-default u-text-variant u-text-9">Copyright @2021 Squad Ed
+          </p>
+        </div>
+      </footer><span
+        style="height: 64px; width: 64px; margin-left: 0px; margin-right: auto; margin-top: 0px; background-image: none; right: 20px; bottom: 20px"
+        class="u-back-to-top u-grey-5 u-icon u-icon-circle u-opacity u-opacity-85 u-spacing-15" data-href="#">
+        <svg class="u-svg-link" preserveAspectRatio="xMidYMin slice" viewBox="0 0 551.13 551.13">
+          <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#svg-1d98"></use>
+        </svg>
+        <svg class="u-svg-content" enable-background="new 0 0 551.13 551.13" viewBox="0 0 551.13 551.13"
+          xmlns="http://www.w3.org/2000/svg" id="svg-1d98">
+          <path d="m275.565 189.451 223.897 223.897h51.668l-275.565-275.565-275.565 275.565h51.668z"></path>
+        </svg>
+      </span>
+
+      <!-- Optional JavaScript; choose one of the two! -->
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+      <!-- Option 2: Separate Popper and Bootstrap JS -->
+      <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>

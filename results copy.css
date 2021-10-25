@@ -1,0 +1,38 @@
+/* .#hero-image{
+  background: llinear-gradient(0deg, rgba(0,0,0,0.80), rgba(0,0,0,0.55));
+} */
+
+html, body{
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: var(--font-primary);
+
+  box-sizing: border-box;}
+
+body {
+  height:100%;
+}
+
+.card-text-content {
+  position: relative;
+}
+
+.card-footer-section{
+display: flex;
+justify-content: space-evenly;
+position:absolute;
+align-items: center;
+
+bottom: 0;
+height: 2rem;
+width: 97%;
+}
+
+.ratings {
+  display: inline;
+}
+
+.ratings i {
+  font-size: 16px;
+  color:#FBBB04;
+}

@@ -1,0 +1,153 @@
+/* .#hero-image{
+  background: llinear-gradient(0deg, rgba(0,0,0,0.80), rgba(0,0,0,0.55));
+} */
+
+html, body{
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  color: var(--font-primary);
+
+  box-sizing: border-box;}
+
+body {
+  height:100%;
+}
+
+/* .hero-section  {
+  height: 8rem;
+} */
+
+.card-footer-container {
+  position: relative;
+  height: 3rem;
+  width: 100%;
+}
+
+.card-footer-section{
+display: flex;
+/* justify-content: space-evenly; */
+justify-content: space-between;
+position:absolute;
+align-items: center;
+bottom: 0;
+width: 97%;
+} 
+
+.ratings {
+  display: inline;
+}
+
+.ratings i {
+  font-size: 16px;
+  color:#FBBB04;
+}
+
+.video-container {
+  height: auto;
+  width: auto;
+}
+
+  .hero { 
+  background-color: #e7ebf0;
+  /* background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); */
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}   
+
+.credits  li{
+  list-style: none;
+}
+
+.mentor-info{
+  border: none;
+  background-image: linear-gradient(315deg, #e7ebf0 0%, #f5f7fa 74%);
+  box-shadow: 2.5px 3px 3px 1px rgba(0,0,0,0.3);
+  /* padding-right: 2rem; */
+  
+}
+.career-body {
+  background-color: #002333;
+  color: #e7ebf0;
+  border-radius: 0.2rem;
+  align-items: center;
+} 
+
+
+
+.career-outcomes {
+  border: none;
+  box-shadow: 2.5px 3px 3px 1px rgba(0,0,0,0.3);
+  border-radius: 0.4rem;
+  align-items: center;
+
+  /* background-color: #F8F8F8; */
+}
+
+.mentor-section ul:not(.u-unstyled)
+{
+margin-top: 0;
+}
+
+.video-container {
+  box-shadow: 2.5px 3px 3px 1px rgba(0,0,0,0.4);
+  border-radius: 0.4rem;
+}
+
+/* responsiveness */
+
+@media(min-width:1199px) and (max-width:1440px) {
+ 
+  .hero{
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+
+}
+
+@media(min-width:992px) and (max-width:1199px) {
+
+  .career-outcomes{
+    margin-left: 22rem;
+  }
+}
+
+@media(min-width:766px) and (max-width:991px) {
+  .career-outcomes{
+    margin-left: 22rem;
+  }
+}
+
+@media(min-width:650px) and (max-width:768px) {
+
+  .career-outcomes{
+    margin-left: 16rem;
+  }
+
+}
+
+@media(min-width:574px) and (max-width:649px) {
+
+  .career-outcomes{
+    margin-left: 9rem;
+  
+  }
+
+}
+
+@media(min-width:350px) and (max-width:573px) {
+
+  .career-outcomes{
+    margin-left: 5rem;
+    
+  }
+
+  .mentor-section{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+}
